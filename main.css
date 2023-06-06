@@ -37,9 +37,11 @@ a {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    
+    transition: ease-in-out 0.2s all;
+}
 
-    
+.top-button:hover{
+    bottom: 25px;
 }
 
 
