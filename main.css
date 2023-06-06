@@ -119,11 +119,19 @@ a {
     background-color: gold;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    gap: 5rem;
 }
 
-.projectCard{
+.projectImg1{
     display: flex;
-    
+    justify-content: center;
+    margin-top: 1rem; 
+}
+
+.scale-img1{
+    width: 60%;
 }
 
    
