@@ -16,10 +16,46 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+  }
+  
+  .footer__contact {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  
+  .footer__contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    
+  }
+  
+  .footer__contact-item:last-child {
+    margin-right: 0;
+  }
+  .footer--icons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: large;
+    width: 1.5rem;
+  }
+
+  .footer--icons:hover{
+    text-decoration: underline;
+  }
+
 .main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 100vh);
+    grid-template-rows: repeat(3, 100vh);
 }
 
 a {
@@ -35,13 +71,13 @@ a {
     display: flex;
     float: right;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 30px;
     transition: ease-in-out 0.2s all;
 }
 
 .top-button:hover{
-    bottom: 25px;
+    bottom: 65px;
 }
 
 
@@ -178,6 +214,7 @@ a {
     top: 15rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -190,7 +227,7 @@ a {
 }
 
 .aboutImg{
-    margin-left: 1.5rem;
+    margin-bottom: 3rem;
     border-radius: 50%;
 }
 
@@ -201,6 +238,88 @@ a {
     margin-right: 10%;
 }
 
-.contact{
-    background-color: violet;
+@media (max-width: 950px){
+    .footer {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        
+      }
+      
+      .footer__contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+      }
+      
+      .footer__contact-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 80%;
+        justify-content: space-evenly;
+
+      }
+      
+      .footer__contact-item:last-child {
+        margin-right: 0;
+      }
+      
+      .footer--icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: large;
+        width: 1.5rem;
+        margin: 5px;
+      }
+      
+      .footer--icons:hover {
+        text-decoration: underline;
+      }
+
+      
+}
+
+@media (max-width:750px) {
+
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100vh;
+}
+    .projects{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutContainer{
+    margin-top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aboutImg{
+    width: 50%;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+}
+    
 }
