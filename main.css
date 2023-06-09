@@ -123,6 +123,12 @@ a {
     gap: 2%;
 }
 
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .center{
     display: flex;
     justify-content: center;
@@ -148,7 +154,31 @@ a {
 
 .aboutContainer{
     background-color: gold;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutCard{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.aboutImg{
+    margin-left: 1.5rem;
+    border-radius: 50%;
+}
+
+.aboutInfo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .contact{
