@@ -97,15 +97,12 @@ a {
 }
 
 .heroProfile--icons{
-    
     color: white;
     width: 1.5rem;
-    
 }
 
-.collect{
-    display: flex;
-    justify-content: center;
+.heroProfile--icons:hover{
+    width: 2rem;
 }
 
 
@@ -141,20 +138,45 @@ a {
     width: 80%;
 }
 
-
 .Btn{
     background-color: #000000;
     color: #FFFFFF;
     height: 2rem;
     width: 10rem;
     border-radius: 7px;
+    border: 0;
 }
+
+.Btn:hover{
+    height: 2.5rem;
+    width: 10.5rem;
+}
+.collect{
+    display: flex;
+    justify-content: center;
+}
+.toProjects:hover{
+    text-decoration: underline;
+    color: white;
+}
+.toAbout:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+.toContact:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+
+
    
 /* end of Projects section */
 
 .aboutContainer{
+    top: 15rem;
     display: flex;
-    justify-content: center;
     align-items: center;
 
 }
@@ -175,7 +197,6 @@ a {
 .aboutInfo{
     display: flex;
     justify-content: center;
-    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
 }
