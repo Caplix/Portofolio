@@ -151,15 +151,17 @@ a {
 .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     margin-left: 5%;
     margin-right: 5%;
     gap: 2%;
 }
 
 .projectCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    height: 50%;
+
 }
 
 .center{
@@ -169,9 +171,14 @@ a {
     margin-top: 1rem; 
 
 }
+.imgContainer{
+    width: 100%;
+    height: auto;
+}
 
 .scale-img1{
-    width: 80%;
+    height: 10rem;
+    width: 100%;
 }
 
 .Btn{
