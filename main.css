@@ -83,7 +83,7 @@ a {
 }
 
 .hero--card{
-    width: 30%;
+    width: 50%;
 }
 
 .hero--name, .hero--info, .hero--icons{
@@ -116,28 +116,40 @@ a {
 
 /*Projects */
 .projects{
-    background-color: gold;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 5rem;
-    margin-right: 5rem;
-    gap: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 2%;
 }
 
-.projectImg1{
+.center{
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 1rem; 
+
 }
 
 .scale-img1{
-    width: 60%;
+    width: 80%;
 }
 
+
+.Btn{
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 7px;
+}
    
 /* end of Projects section */
 
-
+.aboutContainer{
+    background-color: gold;
+    
+}
 
 .contact{
     background-color: violet;
