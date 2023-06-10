@@ -246,6 +246,15 @@ a {
 }
 
 @media (max-width: 950px){
+
+    .top-button{
+        display: flex;
+        float: right;
+        position: fixed;
+        bottom: 60px;
+        right: 5px;
+        transition: ease-in-out 0.2s all;
+    }
     .footer {
         background-color: white;
         color: black;
